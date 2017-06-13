@@ -1,0 +1,40 @@
+body{
+	width: 100%;
+	height: 100%;
+	background: #6190E8; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #6190E8 , #A7BFE8); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #6190E8 , #A7BFE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+.all{
+	margin-top: 50px;
+	width: 1030px;
+	font-weight: bold;
+	transition: all 1s;
+	transform-origin: 0% 0%; 
+}
+.a{
+	width: 80px;
+	height: 600px;
+	float: left;
+}
+canvas{
+	float: left;
+}
+.contain{
+	width: 120px;
+	float: right;
+}
+.help{
+	clear: both;
+	margin-top: 50px;
+	margin-left: 80px;
+}
+:-moz-full-screen,:-webkit-full-screen,:fullscreen{
+    background: #6190E8; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #6190E8 , #A7BFE8); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #6190E8 , #A7BFE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    outline: none;
+    width:100%;
+    height:100%;
+}

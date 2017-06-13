@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>跑跑酷</title>
+
+<script src="lib/jquery-3.1.0.min.js"></script>
+
+<script src="lib/bootstrap-3.3.7/bootstrap.min.js"></script>
+<link href="lib/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
+
+<script src="lib/createJS/easeljs-0.8.2.min.js"></script>
+<script src="lib/createJS/preloadjs-0.6.2.min.js"></script>
+<script src="lib/createJS/soundjs-0.6.2.min.js"></script>
+<script src="lib/createJS/tweenjs-0.6.2.min.js"></script> 
+ 
+<link rel="stylesheet" type="text/css" href="game.css"/>
+
+</head>
+<body>
+
+<div class="all">
+	<div class="a"></div>
+	
+	<canvas id="canvas" width="800" height="600"></canvas>
+
+	<div class="contain">
+		<div>关卡难度：<span id="runEasy">简单</span></div>
+		<div>当前关卡：<span id="level">1</span></div>
+		<div>剩余次数：<span id="levelNum">5</span></div>
+		<div>查找失败：<span id="selectfail">0</span></div>
+		<div>走格成功：<span id="runsuccess">0</span></div>
+		<div>走格失败：<span id="runfail">0</span></div>
+		<div>实时帧率：<span id="fps">0</span></div>
+		<div>
+			<div class="progress progress-striped active">
+			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+				 <span>60帧率</span>
+			</div>
+			</div>
+		</div>
+		<div>
+			<img id="img" src="images/aa.jpg" style="width: 120px;" />
+			<img id="toData" src="" style="width: 120px;" />
+		</div>
+	</div>
+	
+	<div class="help">
+		<h2>操作指南</h2>
+		<div>WSAD ↑↓←→ 控制角色移动      双击游戏全屏</div>
+		<h2>游戏介绍</h2>
+		<div>当角色不能控制时，记住变成蓝色的格子，然后重复踩一遍刚才的格子，就算成功，若踩到没变成蓝色的格子，就算失败；困难模式下还要记住蓝色格子出现的顺序，踏错顺序也算失败；简单模式会出现一张图片提示所有走过的格子，随着玩家关卡的不断提高，格子的数量还有要记住的数目逐渐增加</div>
+		<h2>皮肤</h2>
+		<div>玩家可以自定义格子的皮肤，只要把图片拖进当前窗口，当关卡提高1级或者刷新页面，就能看到自定义的皮肤</div>
+	</div>
+
+</div>
+
+<audio src="sound/right.mp3" class="rightSound"></audio>
+<audio src="sound/error.mp3" class="errorSound"></audio>
+
+</body>
+ 
+<script src="game.js" type="text/javascript" charset="utf-8"></script> 
+
+ </html>
