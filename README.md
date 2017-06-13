@@ -4,6 +4,7 @@
 
 
 ## 无需安装， 可直接开玩
+https://raw.githack.com/13025214712/paopaoku/master/index.html
  
 ## 项目效果图
 
